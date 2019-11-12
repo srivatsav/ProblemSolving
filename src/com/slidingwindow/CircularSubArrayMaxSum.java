@@ -30,12 +30,28 @@ package com.slidingwindow;
 public class CircularSubArrayMaxSum {
 
 	public static void main(String[] args) {
-		int [] arr = {8, -8, 9, -9, 10, -11, 12};		
+		int [] arr = {-1, -4, -5, -2, -1};		
 		int n = arr.length;
-		System.out.println(maxSumCircularSubArray(arr, n));
+		System.out.println("Max Sum of Circular Sub Array is :: " +maxSumCircularSubArray(arr, n));
 	}
 
 	private static int maxSumCircularSubArray(int[] arr, int n) {
+
+		//Case when all the numbers are negative
+		boolean allNegativeNUmbers = true;
+        int negativeMaxSum = arr[0];
+        for(int i=1;i<n;i++){
+            if(arr[i] > 0){
+                allNegativeNUmbers = false;
+            }
+            else{
+                negativeMaxSum = Integer.max(negativeMaxSum, negativeMaxSum + arr[i]);
+            }
+        }
+        
+        if(allNegativeNUmbers){
+            return negativeMaxSum;
+        }
 		
 		// Case when the corner elements are not included.
 		int maxSum = kadane(arr,n);
