@@ -24,7 +24,7 @@ public class BinaryHeap {
 	 * @return
 	 */
 	private int getMin() {
-		return this.heap[1];
+		return this.heap[0];
 	}
 
 	/**
@@ -37,11 +37,11 @@ public class BinaryHeap {
 	}
 
 	private int getLeftChild(int position) {
-		return 2 * position;
+		return (2 * position) + 1;
 	}
 
 	private int getRightChild(int position) {
-		return (2 * position) + 1;
+		return (2 * position) + 2;
 	}
 
 	private boolean isLeafNode(int position) {
@@ -63,8 +63,8 @@ public class BinaryHeap {
 	 * @return
 	 */
 	private int extractMin() {
-		int poppedElement = heap[1];
-		heap[1] = heap[size--];
+		int poppedElement = heap[0];
+		heap[0] = heap[size--];
 		minHeapify(1);
 		return poppedElement;
 	}
@@ -76,7 +76,7 @@ public class BinaryHeap {
 	 * 
 	 * @param position
 	 */
-	private void minHeapify(int position) {
+	public void minHeapify(int position) {
 
 		if (heap[position] > heap[getLeftChild(position)] || heap[position] > heap[getRightChild(position)]) {
 			
@@ -96,7 +96,7 @@ public class BinaryHeap {
 	 * 
 	 * @param element
 	 */
-	private void insert(int element) {		
+	public void insert(int element) {		
 		if(size >= capacity) {
 			return;
 		}
