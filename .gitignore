@@ -2,4 +2,9 @@
 .project
 .settings/
 bin/
+.idea/
+ProblemSolving.iml
+out/
+src/ProblemSolving1.iml
+
 
