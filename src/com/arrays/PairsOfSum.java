@@ -6,7 +6,7 @@ public class PairsOfSum {
   public static void main(String[] args) {
 
     int[] arr = { 1, 2, 3, 4, 3, 5, 0, 6 };
-    int target = 6;
+    int target = 1000;
 
     findIndexOfPairsForTarget(arr, target);
   }
