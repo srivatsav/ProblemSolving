@@ -1,4 +1,4 @@
-
+package com.arrays;
 public class TrappingRainWater {
 
   public static void main(String[] args) {

@@ -1,8 +1,12 @@
+package com.arrays;
+
 public class SmallestPositiveMissingNumber {
 
   public static void main(String[] args) {
 
     int[] arr = { 28, 7, -36, 21, -21, -50, 9, -32 };
+//    int [] arr = {1,2,0};
+//    int [] arr = {0};
 
     int missingNumber = findMissingPositiveNumber(arr, arr.length);
     System.out.println("Missing Positive NUmber is :: " + missingNumber);
@@ -10,12 +14,40 @@ public class SmallestPositiveMissingNumber {
 
   static int findMissingPositiveNumber(int[] arr, int size) {
 
-    int count = segregate(arr, size);
-    int[] arr2 = fetchAllPositiveArray(arr, count);
+    int j = 0;
 
-    int missingNumber = findMissingNumber(arr2);
+    for(int i=0;i<size;i++)
+    {
+      if(arr[i]<0){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j++] = temp;
+      }
+    }
 
-    return missingNumber;
+    for(int i=j;i<size;i++)
+    {
+      int n1 = Math.abs(arr[i]);
+
+      if(n1 >0 && n1 - 1 < size && arr[n1-1] > 0)
+      {
+        arr[n1-1] = -arr[n1-1];
+      }
+    }
+
+    for(int i=0;i<size;i++)
+    {
+      if(arr[i]>=0) return i-j+1;
+    }
+    return size-j+1;
+
+//    int count = segregate(arr, size);
+//
+//    int[] arr2 = fetchAllPositiveArray(arr, count);
+//
+//    int missingNumber = findMissingNumber(arr2);
+//
+//    return missingNumber;
   }
 
   /**

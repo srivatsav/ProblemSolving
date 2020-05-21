@@ -1,3 +1,4 @@
+package com.arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -5,8 +6,8 @@ public class PairsOfSum {
 
   public static void main(String[] args) {
 
-    int[] arr = { 1, 2, 3, 4, 3, 5, 0, 6 };
-    int target = 1000;
+    int[] arr = { 1,5,-1,7,5 };
+    int target = 6;
 
     findIndexOfPairsForTarget(arr, target);
   }

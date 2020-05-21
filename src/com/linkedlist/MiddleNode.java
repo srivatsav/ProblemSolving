@@ -1,3 +1,5 @@
+package com.linkedlist;
+
 /** Efficient Solution using slow and fast pointer. */
 public class MiddleNode {
 
