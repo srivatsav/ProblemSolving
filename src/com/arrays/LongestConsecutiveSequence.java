@@ -6,8 +6,8 @@ import java.util.TreeSet;
 public class LongestConsecutiveSequence {
 
   public static void main(String[] args) {
-    //    int[] arr = {100, 4, 200, 1, 3, 2};
-    int[] arr = {9, 1, 4, 7, 3, -1, 0, 5, 8, -1, 6};
+    // int[] arr = {100, 4, 200, 1, 3, 2};
+    int[] arr = { 9, 1, 4, 7, 3, -1, 0, 5, 8, -1, 6 };
     int size = arr.length;
 
     System.out.println(calculateLongestConsecutiveSequence(arr, size));
@@ -25,7 +25,7 @@ public class LongestConsecutiveSequence {
       int sequence = 0;
       int currentNumber = 0;
 
-      if (!set.contains(integer-1)) {
+      if (!set.contains(integer - 1)) {
         sequence = 1;
         currentNumber = integer;
       }
@@ -36,18 +36,6 @@ public class LongestConsecutiveSequence {
 
       longestSequence = Math.max(longestSequence, sequence);
     }
-
-    //    List<Integer> intLIst = new ArrayList<Integer>(set);
-    //
-    //    for (int i = 0; i < intLIst.size(); i++) {
-    //      int sequence = 1;
-    //      for (int j = i + 1; j < intLIst.size(); j++) {
-    //        i = j-1;
-    //        if (intLIst.get(i) + 1 == intLIst.get(j)) sequence++;
-    //        else break;
-    //      }
-    //      longestSequence = Math.max(longestSequence, sequence);
-    //    }
 
     return longestSequence;
   }
