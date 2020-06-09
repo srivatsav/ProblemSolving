@@ -9,20 +9,34 @@ public class ReverseByKElements {
     linkedList.insertBegin(20);
     linkedList.insertBegin(10);
 
-    int k =2;
+    int k = 3;
     linkedList.head = reverseByKElements(linkedList.head, k);
     linkedList.traverseList();
   }
 
   private static Node reverseByKElements(Node head, int k) {
 
-    if(head==null || head.next==null) return head;
+    if (head == null || head.next == null)
+      return head;
 
+    Node temp = head;
     Node current = head;
     Node prev = null;
     Node next = null;
 
     int count = 0;
+
+    while (current != null && count < k) {
+      current = current.next;
+      count++;
+    }
+
+    if (count < k)
+      return temp;
+
+    current = head;
+    count = 0;
+
     while (current != null && count < k) {
       next = current.next;
       current.next = prev;
@@ -31,7 +45,7 @@ public class ReverseByKElements {
       count++;
     }
 
-    if(current!=null){
+    if (current != null) {
       head.next = reverseByKElements(current, k);
     }
     return prev;
