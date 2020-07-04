@@ -3,7 +3,7 @@ package com.arrays;
 public class MinimumWindowSubstring {
 
   public static void main(String[] args) {
-    System.out.println(calculateMinWindowSubString("BDAB", "AB"));
+    System.out.println(calculateMinWindowSubString("ADOBECODEBANC", "ABC"));
   }
 
   public static String calculateMinWindowSubString(String s, String t) {
