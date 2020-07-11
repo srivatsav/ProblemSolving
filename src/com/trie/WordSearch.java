@@ -25,9 +25,6 @@ public class WordSearch {
   private static void dfs(char[][] board, int i, int j, boolean[][] visited) {
     if (i < 0 || j < 0 || i >= board.length || j >= board[0].length || visited[i][j])
       return;
-
-    
-   
   }
 
 }

@@ -3,21 +3,40 @@ package com.random;
 public class Division {
 
   public static void main(String[] args) {
-    divide(-2147483648, -1);
+    System.out.println(divide(7, -3));
   }
 
-  public static int divide(int dividend, int divisor) {
+  public static int divide(long dividend, long divisor) {
 
-    int count = 0;
-    int temp = Math.abs(dividend); // 1
+    if (dividend == 0)
+      return 0;
 
-    while (temp >= Math.abs(divisor)) {
-      temp = temp - Math.abs(divisor);
-      count++;
-    }
+    int sign = 1;
 
-    System.out.println(count);
+    if ((dividend > 0 && divisor < 0) || (dividend < 0 && divisor > 0))
+      sign = -1;
 
-    return ((divisor > 0 && dividend > 0) || (divisor < 0 && dividend < 0)) ? count : -count;
+    dividend = Math.abs(dividend);
+    divisor = Math.abs(divisor);
+
+    if (dividend < divisor)
+      return 0;
+
+    long res = 1;
+    long originalDivisor = divisor;
+
+    if (divisor == 1)
+      res = dividend;
+    else if (divisor == dividend)
+      res = 1;
+    else
+      while (divisor + divisor <= dividend) {
+        res++;
+        divisor += divisor;
+      }
+    res += divide(dividend - divisor, originalDivisor);
+
+    return sign * (int) res;
+
   }
 }
