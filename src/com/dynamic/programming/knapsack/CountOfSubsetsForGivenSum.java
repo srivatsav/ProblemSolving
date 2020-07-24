@@ -1,4 +1,4 @@
-package com.dynamic.programming;
+package com.dynamic.programming.knapsack;
 
 public class CountOfSubsetsForGivenSum {
   public static void main(String[] args) {

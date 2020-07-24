@@ -1,4 +1,4 @@
-package com.dynamic.programming;
+package com.dynamic.programming.knapsack;
 
 import java.util.ArrayList;
 import java.util.List;
