@@ -1,10 +1,5 @@
 package com.arrays;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 /**
  * Given an array of numbers nums, in which exactly two elements appear only
  * once and all the other elements appear exactly twice. Find the two elements
@@ -29,23 +24,25 @@ public class SingleNumberIII {
 
   private static int[] singleNumber(int[] nums) {
 
-    Map<Integer, Integer> map = new HashMap<>();
+    if (nums == null)
+      return nums;
 
-    for (int i = 0; i < nums.length; i++) {
-      if (map.get(nums[i]) == null) {
-        map.put(nums[i], 1);
-      } else {
-        map.remove(nums[i]);
-      }
+    int k = 0;
+    for (int num : nums)
+      k ^= num;
+
+    int mask = k & -k;
+
+    int x = 0;
+    int y = 0;
+    for (int num : nums) {
+      if ((num & mask) == 0)
+        x ^= num;
+      else
+        y ^= num;
     }
 
-    int[] res = new int[map.size()];
-    int k = 0;
-
-    for (Map.Entry<Integer, Integer> entry : map.entrySet())
-      res[k++] = entry.getKey();
-
-    return res;
+    return new int[] { x, y };
   }
 
 }
