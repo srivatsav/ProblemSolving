@@ -3,7 +3,7 @@ package com.arrays;
 public class FindDuplicateNumber {
 
   public static void main(String[] args) {
-    int[] arr = {2, 5, 9, 6, 9, 3, 8, 9, 7, 1};
+    int[] arr = { 2, 5, 9, 6, 9, 3, 8, 9, 7, 1 };
 
     System.out.println(findDuplicates(arr));
   }

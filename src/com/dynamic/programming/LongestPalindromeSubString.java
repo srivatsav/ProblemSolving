@@ -1,6 +1,11 @@
 package com.dynamic.programming;
 
 public class LongestPalindromeSubString {
+
+  static int maxLen = 1;
+  static int startIndex = 0;
+  static int endIndex = 0;
+
   public static void main(String[] args) {
 
     System.out.println(longestPalindrome("aaabaaaa"));
@@ -11,41 +16,39 @@ public class LongestPalindromeSubString {
     if (s == null || s.length() == 0)
       return "";
 
-    int left = 0, right = s.length() - 1;
-    int lIndex = 0;
-    int rIndex = 0;
+    if (s.length() <= 1)
+      return s;
 
-    while (left <= right) {
-      int temp1 = left;
-      int count = 0;
-      int i;
+    int n = s.length();
 
-      for (i = right; i >= temp1; i--) {
-
-        if (temp1 == i) {
-          break;
-        }
-
-        if (s.charAt(temp1) != s.charAt(i)) {
-          count = 0;
-          continue;
-        }
-        count += 2;
-        temp1++;
-      }
-
-      if (i < temp1 && rIndex - lIndex < count) {
-        lIndex = left;
-        rIndex = left + count;
-      } else if (i == temp1 && rIndex - lIndex < count + 1) {
-        lIndex = left;
-        rIndex = left + count + 1;
-
-      }
-
-      left++;
+    // odd palindromie
+    for (int i = 0; i < n - 1; i++) {
+      int l = i, r = i;
+      getPalindromeLength(s, l, r, n);
     }
 
-    return s.substring(lIndex, rIndex);
+    // even palindrome
+    for (int i = 0; i < n - 1; i++) {
+      int l = i, r = i + 1;
+      getPalindromeLength(s, l, r, n);
+    }
+
+    return s.substring(startIndex, endIndex + 1);
+  }
+
+  private static void getPalindromeLength(String s, int l, int r, int n) {
+    while (l >= 0 && r < n) {
+      if (s.charAt(l) == s.charAt(r)) {
+        l--;
+        r++;
+      } else
+        break;
+    }
+    int len = r - l - 1;
+    if (len > maxLen) {
+      maxLen = len;
+      startIndex = l + 1;
+      endIndex = r - 1;
+    }
   }
 }
