@@ -20,6 +20,13 @@ public class MaxProfitKTransactions {
     else if (n == 2 && (prices[1] < prices[0]))
       return 0;
 
+      /**    5  11  3  50  60  90
+       * --|----------------------------
+       * 0 | 0  0   0   0   0   0
+       * 1 | 0  
+       * 2 | 0
+       */
+
     int[][] dp = new int[3][n];
 
     for (int i = 0; i < dp.length; i++)

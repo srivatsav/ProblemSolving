@@ -35,7 +35,7 @@ public class LongestCommonSubsequence {
 		}
 
 		int[][] dp = getLongestCommonSubSequence(x, y, m, n);
-		// int longestSubSequenceLength = LCS(x, y, m, n);
+		// int longestSubSequen}ceLength = LCS(x, y, m, n);
 		System.out.println("Longest Sub sequence length is :: " + dp[m][n]);
 
 		printLongestCommonSubSequence(dp, m, n, x, y);

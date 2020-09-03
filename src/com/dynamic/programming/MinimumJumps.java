@@ -32,7 +32,7 @@ public class MinimumJumps {
     int[] arr3 = { 1, 1, 0 };
     int[] arr4 = { 1, 2, 0, 0, 0 };
     // System.out.println(minimumJumps(arr1, arr1.length));
-    System.out.println(minJumps(arr2, arr2.length));
+    System.out.println(minJumps(arr, arr.length));
   }
 
   // function to find minimum number of jumps to reach end of the array
@@ -63,25 +63,28 @@ public class MinimumJumps {
     return jump;
   }
 
-  public static int minJumps(int[] arr, int n) {
-    if (n == 0)
+  /**
+   * { 1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9 }
+   * 
+   * { 1, 4, 3, 2, 6, 7 }
+   * 
+   * @param arr
+   * @param n
+   * @return
+   */
+  public static int minJumps(int[] nums, int n) {
+    if (nums.length == 1)
       return 0;
-
-    int position = arr[0];
-    int maxPosition = arr[0];
-
+    int position = nums[0];
+    int maxPosition = nums[0];
     int jumps = 1;
-
-    for (int i = 1; i < n; i++) {
-      if (i > position) {
+    for (int i = 1; i < nums.length; i++) {
+      if (position < i) {
         jumps++;
         position = maxPosition;
       }
-      if (arr[position] == 0)
-        return -1;
-      maxPosition = Math.max(maxPosition, i + arr[i]);
+      maxPosition = Math.max(i + nums[i], maxPosition);
     }
-
     return jumps;
 
   }

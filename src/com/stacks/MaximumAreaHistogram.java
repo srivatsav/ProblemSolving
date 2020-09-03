@@ -24,8 +24,8 @@ import java.util.Stack;
 public class MaximumAreaHistogram {
   public static void main(String[] args) {
 
-    // int[] arr = { 2, 1, 5, 6, 2, 3 };
-    int[] arr = { 5, 5, 1, 7, 1, 1, 5, 2, 7, 6 };
+    int[] arr = { 2, 1, 5, 6, 2, 3 };
+    // int[] arr = { 5, 5, 1, 7, 1, 1, 5, 2, 7, 6 };
 
     Stack<Pair> stack = new Stack<>();
     List<Integer> left = new ArrayList<Integer>();
