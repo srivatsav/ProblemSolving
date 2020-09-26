@@ -79,8 +79,8 @@ public class BinaryHeap {
 	public void minHeapify(int position) {
 
 		if (heap[position] > heap[getLeftChild(position)] || heap[position] > heap[getRightChild(position)]) {
-			
-			if(heap[getLeftChild(position)] < heap[getRightChild(position)]) {
+
+			if (heap[getLeftChild(position)] < heap[getRightChild(position)]) {
 				swapNodes(position, getLeftChild(position));
 				minHeapify(getLeftChild(position));
 			} else {
@@ -90,22 +90,22 @@ public class BinaryHeap {
 
 		}
 	}
-	
+
 	/**
 	 * Insertion in a heap.
 	 * 
 	 * @param element
 	 */
-	public void insert(int element) {		
-		if(size >= capacity) {
+	public void insert(int element) {
+		if (size >= capacity) {
 			return;
 		}
 		heap[++size] = element;
 		int current = size;
-		while(heap[getParent(current)] > heap[current]) {
+		while (heap[getParent(current)] > heap[current]) {
 			swapNodes(current, getParent(current));
 			current = getParent(current);
 		}
 	}
-		
+
 }

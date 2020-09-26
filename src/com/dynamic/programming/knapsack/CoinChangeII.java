@@ -5,7 +5,7 @@ public class CoinChangeII {
     int[] coins = { 1, 2, 5 };
     int amount = 11;
 
-    coinChange(coins, amount);
+    System.out.println(coinChange(coins, amount));
   }
 
   private static int coinChange(int[] coins, int amount) {

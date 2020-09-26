@@ -1,0 +1,32 @@
+// Main Requirements
+1. Split the amount equally.
+2. Split the amount by percentage.
+3. Split by actual amount.
+
+// Actors
+1. User
+
+// Requirements
+1. User should have name, email, userId and mobileNumber.
+2. Split type should be one of these i.e EQUAL / PERCENTAGE / EXACT.
+3. User(s) can add any amount of expense and select any expense type and split with other users.
+4. The percentage and the amount can have up to 2 decimal places.
+5. Percentage -> verify if the total sum of percentages adds up to 100% or not.
+6. Exact -> verify if total sum of shares is equal to the total expense amount.
+7. Show expenses of all users and their balances.
+8. The amount should be rounded off to two decimal places.
+   Say if User1 paid 100 and amount is split equally among 3 people.
+   Assign 33.34 to first person and 33.33 to others.
+9. Show balances of non zero users only.
+
+// Input
+1. Create few users in driver class.
+2. 3 types of input
+    i. EXPENSE <user-id-of-person-who-paid> <no-of-users> <space-separated-list-of-users>
+    <EQUAL/EXACT/PERCENT> <space-separated-values-in-case-of-non-equal>
+    ii. show balances for all : SHOW
+    iii. show balance for a user : SHOW <user-id>
+
+// Output
+1. <user-id-of-x> owes <user-id-of-y>: <amount>
+2. If there are no balances for the input, print No balances

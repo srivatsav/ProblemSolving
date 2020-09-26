@@ -1,0 +1,854 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - WaterAndJug",
+            "request": "launch",
+            "mainClass": "com.arrays.WaterAndJug",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MedianOfSortedArrays",
+            "request": "launch",
+            "mainClass": "com.arrays.MedianOfSortedArrays",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SubsetsNonDuplicates",
+            "request": "launch",
+            "mainClass": "com.arrays.SubsetsNonDuplicates",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxProfit",
+            "request": "launch",
+            "mainClass": "com.binaryheap.MaxProfit",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HeapSort",
+            "request": "launch",
+            "mainClass": "com.binaryheap.HeapSort",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RightView",
+            "request": "launch",
+            "mainClass": "com.trees.RightView",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ConnectSiblings",
+            "request": "launch",
+            "mainClass": "com.trees.ConnectSiblings",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RegexPattern<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.RegexPattern",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BasicCalculator<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.BasicCalculator",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CircularArrayLoop<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.CircularArrayLoop",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CorruptPair<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.CorruptPair",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FindDuplicateNumber<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.FindDuplicateNumber",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FindDuplicatesInArray<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.FindDuplicatesInArray",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FindTheMissingNumber<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.FindTheMissingNumber",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FloodFill<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.FloodFill",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FourSumII<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.FourSumII",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FrequencySort<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.FrequencySort",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GameOfLife<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.GameOfLife",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LongestConsecutiveSequence<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.LongestConsecutiveSequence",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MaxAreaContainer<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.MaxAreaContainer",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MinimumWindowSubstring<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.MinimumWindowSubstring",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NonAdjacentMaxSum<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.NonAdjacentMaxSum",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PairsOfSum<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.PairsOfSum",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PermutationInString<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.PermutationInString",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Permutations<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.Permutations",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-QueueHeight<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.QueueHeight",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RectangleHistogram<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.RectangleHistogram",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RemoveKElements<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.RemoveKElements",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ReverseArray<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.ReverseArray",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RotateArray<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.RotateArray",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SingleNumberIII<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.SingleNumberIII",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SmallestPositiveMissingNumber<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.SmallestPositiveMissingNumber",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SortedSquares<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.SortedSquares",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SpiralOrderArray<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.SpiralOrderArray",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StockBuyAndSell<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.StockBuyAndSell",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TrappingRainWater<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.arrays.TrappingRainWater",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AlmostSortedArray<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.binaryheap.AlmostSortedArray",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BuildMinHeap<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.binaryheap.BuildMinHeap",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-KlargestElements<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.binaryheap.KlargestElements",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-KthLargestInStream<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.binaryheap.KthLargestInStream",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MergeKSortedArrays<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.binaryheap.MergeKSortedArrays",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Driver<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.design.bms.Driver",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Driver<ProblemSolving_470e92fb>(1)",
+            "request": "launch",
+            "mainClass": "com.design.splitwise.Driver",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ClimbStairs<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.ClimbStairs",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LargestSubArraySum<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.LargestSubArraySum",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LongestCommonSubString<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.LongestCommonSubString",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LongestCommonSubsequence<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.LongestCommonSubsequence",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LongestPalindromeSubString<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.LongestPalindromeSubString",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LongestRepeatingSubSequence<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.LongestRepeatingSubSequence",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MaxProfitKTransactions<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.MaxProfitKTransactions",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MinimumJumps<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.MinimumJumps",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PaintHouse1<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.PaintHouse1",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PaintHouse2<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.PaintHouse2",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WordBreakII<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.WordBreakII",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CoinChangeII<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.knapsack.CoinChangeII",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CountOfSubsetsForGivenSum<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.knapsack.CountOfSubsetsForGivenSum",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-EqualSumPartition<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.knapsack.EqualSumPartition",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MinimumSubsetSumDifference<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.knapsack.MinimumSubsetSumDifference",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RodCuttingProblem<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.knapsack.RodCuttingProblem",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SubSetCountWithDifference<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.knapsack.SubSetCountWithDifference",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SubsetSum<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.knapsack.SubsetSum",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-knapsack<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.dynamic.programming.knapsack.knapsack",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AdjacencyList<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.graphs.AdjacencyList",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AllPossiblePaths<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.graphs.AllPossiblePaths",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BFS<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.graphs.BFS",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CycleInGraph<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.graphs.CycleInGraph",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DFS<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.graphs.DFS",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-dijkstra<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.graphs.dijkstra",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ConflictingIntervals<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.intervals.ConflictingIntervals",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InsertInterval<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.intervals.InsertInterval",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InsertIntervalII<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.intervals.InsertIntervalII",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MergeIntervals<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.intervals.MergeIntervals",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FlattenLinkedList<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.linkedlist.FlattenLinkedList",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GroubyOddAndEven<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.linkedlist.GroubyOddAndEven",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LinkedListSort<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.linkedlist.LinkedListSort",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LinkedListTest<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.linkedlist.LinkedListTest",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MergeKSortedLinkedLists<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.linkedlist.MergeKSortedLinkedLists",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MiddleNode<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.linkedlist.MiddleNode",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NthNodeFromEnd<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.linkedlist.NthNodeFromEnd",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ReverseByKElements<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.linkedlist.ReverseByKElements",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ReverseByRange<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.linkedlist.ReverseByRange",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ReverseLinkedList<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.linkedlist.ReverseLinkedList",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RotateList<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.linkedlist.RotateList",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Division<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.random.Division",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FindRepeat<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.random.FindRepeat",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FindTripletsOfZeroSum<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.random.FindTripletsOfZeroSum",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FindWord<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.random.FindWord",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FourSum<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.random.FourSum",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IPAddressValidation<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.random.IPAddressValidation",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-KFrequentElements<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.random.KFrequentElements",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LargestDivisibleSubSet<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.random.LargestDivisibleSubSet",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LengthOfLongestSubStringNonRepeating<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.random.LengthOfLongestSubStringNonRepeating",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LongestSubstringWithAtmostKDistinct<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.random.LongestSubstringWithAtmostKDistinct",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PascalsTriangleII<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.random.PascalsTriangleII",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SingleNumber2<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.random.SingleNumber2",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StringCompare<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.random.StringCompare",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SubsetSum<ProblemSolving_470e92fb>(1)",
+            "request": "launch",
+            "mainClass": "com.random.SubsetSum",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ValidPalindrome<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.random.ValidPalindrome",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-test<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.random.test",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CircularSubArrayMaxSum<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.slidingwindow.CircularSubArrayMaxSum",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LongestSubStringKDistinct<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.slidingwindow.LongestSubStringKDistinct",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LongestSubStringPermutationPattern<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.slidingwindow.LongestSubStringPermutationPattern",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LongestSubStringWithOnesAfterReplacement<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.slidingwindow.LongestSubStringWithOnesAfterReplacement",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LongestSubStringWithSameLetters<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.slidingwindow.LongestSubStringWithSameLetters",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NBonacciNumbers<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.slidingwindow.NBonacciNumbers",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SmallestSubStringWindow<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.slidingwindow.SmallestSubStringWindow",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SubArraySumGivenSize<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.slidingwindow.SubArraySumGivenSize",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SubArraySumGivenSum<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.slidingwindow.SubArraySumGivenSum",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WordConcatSubString<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.slidingwindow.WordConcatSubString",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MaximumAreaHistogram<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.stacks.MaximumAreaHistogram",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NearestGreaterRight<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.stacks.NearestGreaterRight",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NearestSmallestLeft<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.stacks.NearestSmallestLeft",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NearestSmallestRight<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.stacks.NearestSmallestRight",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CountNodes<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.trees.CountNodes",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CousinNodes<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.trees.CousinNodes",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MinimumDepth<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.trees.MinimumDepth",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PathSumII<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.trees.PathSumII",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VerticalOrderTraversal<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.trees.VerticalOrderTraversal",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AddSearchRegexWord<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.trie.AddSearchRegexWord",
+            "projectName": "ProblemSolving_470e92fb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WordSearchII<ProblemSolving_470e92fb>",
+            "request": "launch",
+            "mainClass": "com.trie.WordSearchII",
+            "projectName": "ProblemSolving_470e92fb"
+        }
+    ]
+}
