@@ -47,11 +47,11 @@ public class PriorityMessageQueue<T extends Comparable> {
         int leftChild = 2 * idx + 1;
         int rightChild = 2 * idx + 2;
 
-        if (leftChild < size && queue[leftChild] != null && queue[leftChild].compareTo(queue[largeChild]) < 0) {
+        if (leftChild < size && queue[leftChild] != null && queue[leftChild].compareTo(queue[largeChild]) > 0) {
             largeChild = leftChild;
         }
-        if (rightChild < size && queue[rightChild] != null && queue[rightChild].compareTo(queue[largeChild]) < 0) {
-            largeChild = leftChild;
+        if (rightChild < size && queue[rightChild] != null && queue[rightChild].compareTo(queue[largeChild]) > 0) {
+            largeChild = rightChild;
         }
 
         if (largeChild != idx) {
