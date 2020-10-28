@@ -5,11 +5,11 @@ public class RotateList {
     LinkedList linkedList = new LinkedList();
     // linkedList.insertBegin(5);
     // linkedList.insertBegin(4);
-    linkedList.insertBegin(3);
     linkedList.insertBegin(2);
     linkedList.insertBegin(1);
+    linkedList.insertBegin(0);
 
-    linkedList.head = rotateList(linkedList.head, 2000000000);
+    linkedList.head = rotateList(linkedList.head, 4);
     linkedList.traverseList();
 
   }
@@ -18,62 +18,43 @@ public class RotateList {
     if (head == null)
       return head;
 
-    Node current = head;
+    if (k == 0)
+      return head;
     int length = 0;
-    while (current != null) {
-      current = current.next;
+    Node node = head;
+    Node lastNode = null;
+
+    while (node != null) {
       length++;
+      lastNode = node;
+      node = node.next;
     }
 
-    if (length == 1 || k == length)
+    // length = 5
+    // node = null
+    // lastNode = 5
+
+    if (length == 0)
       return head;
 
-    if (k > length) {
-      k = k % length;
+    int position = length - (k % length);
+    Node prevNode = null;
+    node = head;
+
+    for (int i = 0; i < position; i++) {
+      prevNode = node;
+      node = node.next;
     }
+    //prevNode = 3
+    // node = 4
+    // lastNode = 5
+    // head = 1;
 
-    Node left = head;
-    current = head;
-    Node prev = null;
+    prevNode.next = null; // 3->null
+    lastNode.next = head; // 4->5->1->2->3->null
 
-    int leftCount = 0;
-    while (current != null && leftCount < k) {
-      prev = current;
-      current = current.next;
-      leftCount++;
-    }
+    head = node;// head->4->5->1->2->3->null
+    return head;
 
-    prev.next = null;
-    Node right = current;
-
-    Node leftReverse = reverse(left);
-    Node rightReverse = reverse(right);
-
-    if (rightReverse != null) {
-      left.next = rightReverse;
-      Node rotated = reverse(leftReverse);
-      return rotated;
-    }
-    return leftReverse;
-
-  }
-
-  private static Node reverse(Node head) {
-    if (head == null)
-      return head;
-
-    Node current = head;
-    Node prev = null;
-    Node next = null;
-
-    while (current != null) {
-      next = current.next;
-      current.next = prev;
-      prev = current;
-      current = next;
-    }
-
-    head = prev;
-    return prev;
   }
 }
