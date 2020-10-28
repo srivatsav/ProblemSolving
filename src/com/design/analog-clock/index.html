@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <title>Analog Clock on HTML5 Canvas and JavaScript</title>
+</head>
+<body>
+    <canvas id="canvas" width="500" height="500" style="border:1px solid #000000" ></canvas>
+</body>
+
+<script>
+    window.onload = function () {
+        setInterval(showClock, 1000);
+
+        function showClock() {
+
+            // DEFINE CANVAS AND ITS CONTEXT.
+            let canvas = document.getElementById('canvas');
+            let canvasContext = canvas.getContext('2d');
+
+            canvasContext.clearRect(0,0,canvas.width, canvas.height);
+
+            drawOuterDial();
+            drawCenterDial();
+            drawHours();
+            drawSeconds();
+            showSeconds();
+
+
+            function drawOuterDial() {
+                canvasContext.beginPath();
+                canvasContext.arc(canvas.width/2, canvas.height/2, 100, 0, 2 * Math.PI);
+                canvasContext.strokeStyle="#000000";
+                canvasContext.lineWidth = 3;
+                canvasContext.stroke();
+            }
+
+            function drawCenterDial() {
+                canvasContext.beginPath();
+                canvasContext.arc(canvas.width / 2, canvas.height / 2, 2, 0, 2 * Math.PI);
+                canvasContext.lineWidth = 3;
+                canvasContext.fillStyle = '#353535';
+                canvasContext.strokeStyle = '#0C3D4A';
+                canvasContext.stroke();
+            }
+
+            function drawHours() {
+                for(let i=0; i<12; i++) {
+                    
+                    let angle = (i-3) * (Math.PI * 2)/12; 
+                    canvasContext.lineWidth = 3;
+                    canvasContext.beginPath();
+
+                    let x1 = (canvas.width/2) + Math.cos(angle) * 90;
+                    let y1 = (canvas.height/2) + Math.sin(angle) * 90;
+                    let x2 = (canvas.width/2) + Math.cos(angle) * 70;
+                    let y2 = (canvas.height/2) + Math.sin(angle) * 70;
+                    canvasContext.moveTo(x1,y1);
+                    canvasContext.lineTo(x2,y2);
+                    canvasContext.strokeStyle="#000000";
+                    canvasContext.stroke();
+
+                }
+            }
+
+            function drawSeconds() {
+                for(let i=0; i<60; i++) {
+                    let angle = (i-3) * (Math.PI * 2)/60;
+                    canvasContext.lineWidth = 0.5;
+                    canvasContext.beginPath();
+
+                    let x1 = (canvas.width/2) + Math.cos(angle) * 90;
+                    let y1 = (canvas.height/2) + Math.sin(angle) * 90;
+                    let x2 = (canvas.width/2) + Math.cos(angle) * 70;
+                    let y2 = (canvas.height/2) + Math.sin(angle) * 70;
+                    canvasContext.moveTo(x1,y1);
+                    canvasContext.lineTo(x2,y2);
+                    canvasContext.strokeStyle="#000000";
+                    canvasContext.stroke();
+                }
+            }
+
+            function showSeconds() {
+                let date = new Date();
+                let seconds = date.getSeconds();
+                let angle = ((Math.PI * 2) * (seconds/60)) ;
+                canvasContext.lineWidth = 0.5;
+                canvasContext.beginPath();
+
+                canvasContext.moveTo(canvas.width / 2, canvas.height / 2);   
+
+                canvasContext.lineTo((canvas.width / 2 + Math.cos(angle) * 80),
+                    canvas.height / 2 + Math.sin(angle) * 80);
+            
+                canvasContext.strokeStyle = '#000000';
+                canvasContext.stroke();
+            }
+
+        }
+    }
+</script>
+</html>
