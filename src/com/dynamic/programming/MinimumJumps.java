@@ -31,8 +31,9 @@ public class MinimumJumps {
     int[] arr2 = { 1, 0, 0 };
     int[] arr3 = { 1, 1, 0 };
     int[] arr4 = { 1, 2, 0, 0, 0 };
+    int[]arr5 = {3,5,8,2,2,6,7,6,8};
     // System.out.println(minimumJumps(arr1, arr1.length));
-    System.out.println(minJumps(arr, arr.length));
+    System.out.println(minJumps(arr5, arr5.length));
   }
 
   // function to find minimum number of jumps to reach end of the array
